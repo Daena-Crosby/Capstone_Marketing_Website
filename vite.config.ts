@@ -14,7 +14,10 @@ export default defineConfig({
       allowedHosts: ["hybrid-scam-shield.onrender.com"],
     },
   },
+  // Use static prerender to avoid SSR/hydration race conditions on platforms
+  // that don't fully support the server runtime. This will generate pre-
+  // rendered HTML and client bundles instead of relying on SSR entry.
   tanstackStart: {
-    server: { entry: "server" },
+    router: { static: true },
   },
 });
