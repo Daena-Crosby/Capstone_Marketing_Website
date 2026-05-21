@@ -16,7 +16,9 @@ export function SiteHeader() {
             <img src={logo} alt="CyberLang Analytics logo" className="h-20 w-20 object-contain" />
           </div>
           <div className="flex flex-col leading-none">
-            <span className="font-display text-base font-semibold tracking-tight">CyberLang Analytics</span>
+            <span className="font-display text-base font-semibold tracking-tight">
+            CyberLang Analytics
+            </span>
             <span className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">Hybrid Scam Shield</span>
           </div>
         </Link>

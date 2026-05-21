@@ -11,7 +11,10 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 export default defineConfig({
   vite: {
     server: {
-      allowedHosts: ["hybrid-scam-shield.onrender.com"],
+      allowedHosts: [
+        "hybrid-scam-shield.onrender.com",
+        "capstonemarketingwebsite-production.up.railway.app",
+      ],
     },
   },
   // Use static prerender to avoid SSR/hydration race conditions on platforms
